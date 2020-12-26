@@ -1,0 +1,13 @@
+@font-face {
+  font-family: 'Cutive_Mono';
+  src: url('../../assets/fonts/Cutive_Mono/CutiveMono-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Overpass_Mono';
+  src: url('../../assets/fonts/Overpass_Mono/OverpassMono-Regular.ttf') format('truetype');
+}
+
+$header-font: 'Cutive_Mono';
+
+$font-l: 28px;

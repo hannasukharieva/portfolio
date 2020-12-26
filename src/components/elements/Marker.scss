@@ -1,0 +1,29 @@
+a {
+  position: relative;
+  .marker-indicator {
+    position: absolute;
+    mix-blend-mode: multiply;
+    stroke-dasharray: 943px;
+    stroke-dashoffset: 943px;
+    transition: stroke-dashoffset .6s, opacity .1s ease-out;
+    opacity: 0;
+    transition-delay: 0s;
+    will-change: stroke-dashoffset;
+      svg {
+        width: 100%;
+      }
+      path {
+        transition: opacity .3s;
+      }
+  }
+  
+  &:hover {
+    .marker-indicator {
+      opacity: .8;
+      stroke-dashoffset: 0;
+      transition: stroke-dashoffset .4s ease-in, opacity 0s;
+      transition-delay: .4s;
+    }
+  }
+ }
+ 

@@ -1,0 +1,80 @@
+@import "../../../styles/common.scss";
+
+.header-wrapper {
+  background:
+    linear-gradient(90deg, $bright-yellow-75 21px, transparent 1%) center,
+    linear-gradient($bright-yellow-75 21px, transparent 1%) center,
+    $bright-violet;
+    background-size: 22px 22px;
+    border-bottom: 1px solid $bright-violet;
+
+  .header-list {
+    max-width: $wrapper-desktop;
+    height: 100px;
+    margin: auto;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+
+
+    a {
+      text-decoration: none;
+      font-family: $header-font;
+      font-size: $font-l;
+      font-weight: 700;
+      color: $dark-blue;
+
+      &:active,
+      &:visited,
+      &:focus {
+        color: $dark-blue;
+        outline: none;
+      }
+    }
+
+    li:first-child {
+      .marker-indicator {
+        width: 180px;
+        top: -30px;
+        right: 0;
+        bottom: 0;
+        left: -10px;
+
+        path {
+          stroke-width: 3px;
+        }
+      }
+    }
+
+    li:nth-child(2) {
+      .marker-indicator {
+        width: 250px;
+        top: -20px;
+        right: 0;
+        bottom: 0;
+        left: -30px;
+
+        path {
+          stroke-width: 5px;
+        }
+      }
+    }
+
+    li:last-child {
+      .marker-indicator {
+        width: 200px;
+        top: -30px;
+        right: 0;
+        bottom: 0;
+        left: -40px;
+
+        path {
+          stroke-width: 5px;
+        }
+      }
+    }
+  }
+}
