@@ -1,2 +1,6 @@
 @import "./partials/colors.scss";
 @import "./partials/reset.scss";
+
+body {
+  background-color: $background;
+}

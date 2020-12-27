@@ -1,18 +1,21 @@
 @import "../../../styles/common.scss";
 
 .header-wrapper {
+  position: fixed;
   background:
     linear-gradient(90deg, $bright-yellow-75 21px, transparent 1%) center,
     linear-gradient($bright-yellow-75 21px, transparent 1%) center,
     $bright-violet;
-    background-size: 22px 22px;
-    border-bottom: 1px solid $bright-violet;
+
+  background-size: 22px 22px;
+  border-bottom: 1px solid $bright-violet;
+  box-shadow: 0 1px 1px $bright-grey;
+  width: 100%;
+  top: 0;
 
   .header-list {
-    max-width: $wrapper-desktop;
+    @include content;
     height: 100px;
-    margin: auto;
-    padding: 0 30px;
     display: flex;
     flex-direction: row;
     list-style: none;

@@ -1,0 +1,95 @@
+@import "../../../styles/common.scss";
+
+.main-wrapper {
+  @include content;
+  display: grid;
+  grid-gap: 80px;
+  grid-template-columns: 1fr 1.5fr;
+  min-height: calc(100vh - 100px);
+  overflow-y: hidden;
+  margin-top: 200px;
+
+  .main__photo {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 30px;
+      .card {
+        transform: rotate(-10deg);
+        height: 300px;
+        width: 250px;
+        box-shadow: -6px 5px 10px -1px $black-40;
+        padding: 20px 20px 40px 20px;
+        transition: transform .25s;
+        background-color: white;
+
+        &::after {
+          content: "";
+          background: url('../../../assets/images/clip.png') no-repeat;
+          background-size: 100%;
+          height: 100px;
+          width: 50px;
+          position: absolute;
+          top: -22px;
+          right: 70px;
+          z-index: 3;
+        }
+        
+        &:hover {
+          transform: rotate(-8deg);
+          img {
+            filter: grayscale(0%);
+          }
+        }
+
+        &__photo {
+          height: 250px;
+          width: 250px;
+          border: 1px solid rgb(233, 227, 227);
+          filter: grayscale(70%);
+          transition: filter .25s;
+        }
+      }
+  }
+  
+  .main__text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    &-paragraph {
+      display: flex;
+      align-items: flex-start;
+
+      &:first-child {
+        .main__text-content {
+          border-bottom: 1px solid $bright-violet-50;
+        }
+      }
+    }
+
+    &-title {
+      position: relative;
+      top: 10px;
+      font-family: $header-font;
+      font-size: $font-s;
+      font-weight: 700;
+      color: $bright-red;
+      width: 70px;
+    }
+
+    &-content {
+      width: 500px;
+      font-family: 'Dancing_Script';
+      font-size: $font-m;
+      color: $bright-ink;
+      text-align: justify;
+      margin: 0 0 10px 0;
+
+      
+      
+      span {
+        border-bottom: 1px solid $bright-violet-50;
+      }      
+    }
+  }
+}

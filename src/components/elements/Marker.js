@@ -28,7 +28,7 @@ function Marker(props) {
         <path
           className="hover-path"
           fill="none"
-          stroke="#FF3A20"
+          stroke="#ee6c4d"
           stroke-miterlimit="10"
           d={path}
         ></path>
