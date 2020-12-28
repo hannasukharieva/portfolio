@@ -1,0 +1,51 @@
+@import "../../styles/common.scss";
+
+.card {
+  transform: rotate(-10deg);
+  height: 300px;
+  width: 250px;
+  box-shadow: -6px 5px 10px -1px $black-40;
+  padding: 20px 20px 40px 20px;
+  transition: transform .25s;
+  background-color: white;
+  text-decoration: none;
+
+  &::after {
+    content: "";
+    background: url('../../assets/images/clip.png') no-repeat;
+    background-size: 100%;
+    height: 100px;
+    width: 50px;
+    position: absolute;
+    top: -22px;
+    right: 70px;
+    z-index: 3;
+  }
+  
+  &:hover {
+    transform: rotate(-8deg);
+    img {
+      filter: grayscale(0%);
+    }
+  }
+
+  &__photo {
+    height: 250px;
+    width: 250px;
+    border: 1px solid rgb(233, 227, 227);
+    filter: grayscale(70%);
+    transition: filter .25s;
+  }
+
+  &__text {
+    position: relative;
+    left: 10px;
+    top: -10px;
+    font-family: $handwriting;
+    font-size: $font-m;
+    color: $bright-ink;
+    transform: rotate(-10deg);
+    text-align: center;
+  }
+
+}

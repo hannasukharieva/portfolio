@@ -1,0 +1,64 @@
+@import "../../../styles/common.scss";
+
+.projects-wrapper {
+  @include content;
+  padding-bottom: 100px;
+
+  .projects-title {
+    text-align: center;
+    font-family: $marker;
+    font-size: $font-xl;
+    color: $bright-red;
+  }
+  
+  .projects {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    &__card {
+      margin: 100px;
+
+      &:nth-child(3n+1) {
+        .card {
+          transform: rotate(10deg);
+
+          &:hover {
+            transform: rotate(2deg);
+          }
+
+          &::after {
+            background: url('../../../assets/images/clip2.png') no-repeat;
+            background-size: 100%;
+            right: 115px;
+          }
+
+          &__text {
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+
+      &:nth-child(3n+2) {
+        .card {
+          transform: rotate(-15deg);
+
+          &:hover {
+            transform: rotate(-5deg);
+          }
+
+          &::after {
+            background: url('../../../assets/images/clip4.png') no-repeat;
+            background-size: 100%;
+            right: 47px;
+          }
+
+          &__text {
+            transform: rotate(10deg);
+          }
+        }
+      }
+    }
+  }
+}

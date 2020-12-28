@@ -13,9 +13,16 @@
   src: url('../../assets/fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Permanent_Marker';
+  src: url('../../assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype'); 
+}
+
 $header-font: 'Cutive_Mono';
 $handwriting: 'Dancing_Script';
+$marker: 'Permanent_Marker';
 
 $font-s: 20px;
 $font-m: 24px;
 $font-l: 28px;
+$font-xl: 56px;

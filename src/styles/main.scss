@@ -4,3 +4,11 @@
 body {
   background-color: $background;
 }
+
+a {
+  text-decoration: none;
+
+  &:focus {
+    outline: none;
+  }
+}

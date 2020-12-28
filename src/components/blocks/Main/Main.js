@@ -1,13 +1,12 @@
-import "./Main.scss"
-import portrait from "../../../assets/images/portrait.jpg"
+import "./Main.scss";
+import portrait from "../../../assets/images/portrait.jpg";
+import Card from "../../elements/Card";
 
 function Main() {
   return (
     <section className="main-wrapper">
       <div className="main__photo">
-        <div className="card">
-          <img className="card__photo" src={portrait}/>
-        </div>
+        <Card sign="I'm nuts!" image={portrait}/>
       </div>
       <div className="main__text">
         <div className="main__text-paragraph">
