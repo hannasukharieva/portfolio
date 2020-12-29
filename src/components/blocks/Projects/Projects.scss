@@ -2,13 +2,28 @@
 
 .projects-wrapper {
   @include content;
-  padding-bottom: 100px;
+  padding-bottom: 200px;
+  background-image: url('../../../assets/images/bg_projects.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-color: $background;
+  border-right: 2px solid $bright-red;
+  border-left: 2px solid $bright-red;
+  overflow-y: hidden;
 
   .projects-title {
-    text-align: center;
     font-family: $marker;
     font-size: $font-xl;
     color: $bright-red;
+    text-align: center;
+    margin-top: 0;
+    background-image: url(../../../assets/images/title_background.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 60px 0;
+    margin-bottom: -30px;
   }
   
   .projects {
@@ -24,11 +39,11 @@
           transform: rotate(10deg);
 
           &:hover {
-            transform: rotate(2deg);
+            transform: rotate(9deg);
           }
 
           &::after {
-            background: url('../../../assets/images/clip2.png') no-repeat;
+            background: url('../../../assets/images/clip.png') no-repeat;
             background-size: 100%;
             right: 115px;
           }
@@ -45,7 +60,7 @@
           transform: rotate(-15deg);
 
           &:hover {
-            transform: rotate(-5deg);
+            transform: rotate(-14deg);
           }
 
           &::after {

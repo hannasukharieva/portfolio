@@ -1,0 +1,42 @@
+@import "../../../styles/common.scss";
+
+.footer-wrapper {
+  @include content;
+  margin: auto;
+  font-family: $header-font;
+  font-size: $font-xs;
+  display: flex;
+  justify-content: space-between;
+  margin-top: -100px;
+
+  .footer{
+    padding: 0 20px;
+    display: flex;
+
+    &__list {
+      list-style: none;
+
+      li {
+        line-height: 25px;
+      }
+
+      a {
+        color: $bright-blue;
+      }
+    }
+
+    &__icons {
+      display: flex;
+      
+      .icon-image {
+        height: 60px;
+        width: 60px;
+        margin-left: 30px;
+        background-color: $background;
+        border-radius: 50%;
+      }
+    }
+
+  }
+
+}

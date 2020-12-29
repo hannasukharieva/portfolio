@@ -2,6 +2,7 @@ import "./styles/main.scss"
 import Header from "./components/blocks/Header/Header"
 import Main from "./components/blocks/Main/Main"
 import Projects from "./components/blocks/Projects/Projects"
+import Footer from "./components/blocks/Footer/Footer"
 
 function App() {
   return (
@@ -9,6 +10,7 @@ function App() {
       <Header />
       <Main />
       <Projects />
+      <Footer />
     </>
   );
 }

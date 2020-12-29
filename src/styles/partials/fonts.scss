@@ -18,11 +18,17 @@
   src: url('../../assets/fonts/Permanent_Marker/PermanentMarker-Regular.ttf') format('truetype'); 
 }
 
+@font-face {
+  font-family: 'Indie_Flower';
+  src: url('../../assets/fonts/Indie_Flower/IndieFlower-Regular.ttf') format('truetype'); 
+}
+
 $header-font: 'Cutive_Mono';
-$handwriting: 'Dancing_Script';
+$handwriting: 'Indie_Flower';
 $marker: 'Permanent_Marker';
 
-$font-s: 20px;
+$font-xs: 18px;
+$font-s: 22px;
 $font-m: 24px;
 $font-l: 28px;
-$font-xl: 56px;
+$font-xl: 48px;

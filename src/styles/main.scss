@@ -3,6 +3,12 @@
 
 body {
   background-color: $background;
+  background-size: 21px 21px;
+  background-image:
+    linear-gradient(to right, $bright-violet-50 1px, transparent 1px),
+    linear-gradient(to bottom, $bright-violet-50 1px, transparent 1px);
+  background-repeat: space space;
+  overflow-y: hidden;
 }
 
 a {
