@@ -4,7 +4,7 @@ import Card from "../../elements/Card";
 
 function Main() {
   return (
-    <section className="main-wrapper">
+    <section className="main-wrapper" id="main">
       <div className="main__photo">
         <Card sign="Just me!" image={portrait}/>
       </div>

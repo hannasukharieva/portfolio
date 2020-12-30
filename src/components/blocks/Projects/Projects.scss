@@ -17,13 +17,11 @@
     font-size: $font-xl;
     color: $bright-red;
     text-align: center;
-    margin-top: 0;
-    background-image: url(../../../assets/images/title_background.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain;
-    padding: 60px 0;
-    margin-bottom: -30px;
+    margin: 0;
+
+    @media screen and (max-width: $breakpoint-mobile-plus){
+      margin-bottom: 30px;
+    }
   }
   
   .projects {
@@ -33,6 +31,10 @@
 
     &__card {
       margin: 100px;
+
+      @media screen and (max-width: $breakpoint-tablet){
+        margin: 40px;
+      }
 
       &:nth-child(3n+1) {
         .card {

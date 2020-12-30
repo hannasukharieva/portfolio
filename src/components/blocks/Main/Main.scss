@@ -14,11 +14,23 @@
   background-color: $background;
   border-right: 2px solid $bright-red;
   border-left: 2px solid $bright-red;
+  overflow-x: hidden;
+
+  @media screen and (max-width: $breakpoint-tablet){
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
   .main__photo {
     display: flex;
     justify-content: flex-end;
     margin-top: 30px;
+
+    @media screen and (max-width: $breakpoint-tablet) {
+      justify-content: center;
+      width: 100%;
+    }
   }
   
   .main__text {
@@ -29,6 +41,10 @@
     &-paragraph {
       display: flex;
       align-items: flex-start;
+
+      @media screen and (max-width: $breakpoint-mobile-plus){
+        flex-wrap: wrap;
+      }
 
       &:first-child {
         .main__text-content {
@@ -45,6 +61,18 @@
       font-weight: 700;
       color: $bright-red;
       width: 100px;
+
+      @media screen and (max-width: $breakpoint-mobile-plus) {
+        font-size: $font-s;
+        width: 90px;
+        top: 5px;
+        padding: 0 15px 10px 0;
+      }
+
+      @media screen and (max-width: $breakpoint-mobile){
+        font-size: $font-xs;
+        width: 50px;
+      }
     }
 
     &-content {
@@ -54,6 +82,11 @@
       color: $bright-ink;
       text-align: justify;
       margin: 0 0 20px 0;
+
+      @media screen and (max-width: $breakpoint-mobile-plus) {
+        font-size: $font-xs;
+        width: 300px;
+      }
       
       ul {
         li {

@@ -24,7 +24,7 @@ const projects = [
 
 function Projects() {
   return (
-    <div className="projects-wrapper">
+    <div className="projects-wrapper" id="projects">
       <h2 className="projects-title">Projects</h2>
       <div className="projects">
         {

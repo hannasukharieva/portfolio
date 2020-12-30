@@ -1,20 +1,30 @@
 @import "../../../styles/common.scss";
 
 .header-wrapper {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;
+  
+  @media screen and (max-width: $breakpoint-tablet){
+    display: none;
+  }
 
   .header-list {
     @include content;
-    height: 100px;
+    background-color: $bright-yellow-25;
+    border-radius: 30px;
+    height: 80px;
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-between;
     align-items: center;
-
+    transition: background-color 0.5s;
+    
+    &--top {
+      background-color: transparent;
+    }
 
     a {
       text-decoration: none;

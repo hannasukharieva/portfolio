@@ -9,12 +9,23 @@
   justify-content: space-between;
   margin-top: -100px;
 
+  @media screen and (max-width: $breakpoint-tablet){
+    flex-direction: column;
+    align-items: center;
+    margin-top: -200px;
+  }
+
   .footer{
     padding: 0 20px;
     display: flex;
 
     &__list {
       list-style: none;
+
+      @media screen and (max-width: $breakpoint-tablet){
+        text-align: center;
+        padding-bottom: 20px;
+      }
 
       li {
         line-height: 25px;
@@ -27,6 +38,14 @@
 
     &__icons {
       display: flex;
+
+      a:first-child {
+        @media screen and (max-width: $breakpoint-mobile){
+          .icon-image {
+            margin-left: 0;
+          }
+        }
+      }
       
       .icon-image {
         height: 60px;
@@ -34,9 +53,12 @@
         margin-left: 30px;
         background-color: $background;
         border-radius: 50%;
+
+        @media screen and (max-width: $breakpoint-mobile){
+          height: 40px;
+          width: 40px;
+        }
       }
     }
-
   }
-
 }

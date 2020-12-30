@@ -1,6 +1,10 @@
 @import "./partials/colors.scss";
 @import "./partials/reset.scss";
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: $background;
   background-size: 21px 21px;

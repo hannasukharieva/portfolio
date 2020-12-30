@@ -7,7 +7,7 @@ import git from "../../../assets/images/icons/git.png"
 function Footer() {
   return (
     <footer className="footer-wrapper">
-      <div className="footer">
+      <div className="footer" id="contact">
         <ul className="footer__list">
           <li>Hanna Sukharieva</li>
           <li><a href="mailto:hsukharieva@gmail.com">hsukharieva@gmail.com</a></li>
