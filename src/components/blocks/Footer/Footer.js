@@ -15,10 +15,10 @@ function Footer() {
         </ul>
       </div>
       <div className="footer__icons">
-        <a href="https://www.facebook.com/hsukhari/" target="_blank"><img className="icon-image" src={facebook} /></a>
-        <a href="https://www.linkedin.com/in/hanna-sukharieva-55287b127" target="_blank"><img className="icon-image" src={linkedin} /></a>
-        <a href="https://www.instagram.com/anniethefox" target="_blank"><img className="icon-image" src={instagram} /></a>
-        <a href="https://github.com/hannasukharieva" target="_blank"><img className="icon-image" src={git} /></a>
+        <a href="https://www.facebook.com/hsukhari/" target="_blank" rel="noreferrer"><img className="icon-image" src={facebook} /></a>
+        <a href="https://www.linkedin.com/in/hanna-sukharieva-55287b127" target="_blank" rel="noreferrer"><img className="icon-image" src={linkedin} /></a>
+        <a href="https://www.instagram.com/anniethefox" target="_blank" rel="noreferrer"><img className="icon-image" src={instagram} /></a>
+        <a href="https://github.com/hannasukharieva" target="_blank" rel="noreferrer"><img className="icon-image" src={git} /></a>
       </div>
     </footer>
   )
