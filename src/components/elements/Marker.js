@@ -1,6 +1,6 @@
 import "./Marker.scss"
 
-function Marker(props) {
+const Marker = (props) => {
   let path;
   let viewBox;
   switch (props.title) {

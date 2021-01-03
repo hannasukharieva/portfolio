@@ -4,15 +4,13 @@ import Main from "./components/blocks/Main/Main"
 import Projects from "./components/blocks/Projects/Projects"
 import Footer from "./components/blocks/Footer/Footer"
 
-function App() {
-  return (
-    <>
-      <Header />
-      <Main />
-      <Projects />
-      <Footer />
-    </>
-  );
-}
+const App = () => (
+  <>
+    <Header />
+    <Main />
+    <Projects />
+    <Footer />
+  </>
+)
 
 export default App;

@@ -22,27 +22,21 @@ const projects = [
   },
 ]
 
-function Projects() {
-  return (
-    <div className="projects-wrapper" id="projects">
-      <h2 className="projects-title">Projects</h2>
-      <div className="projects">
-        {
-          projects.map(function(project) {
-            return (
-              <div className="projects__card">
-                <Card
-                  image={project.pic}
-                  sign={project.sign}
-                  link={project.link}
-                />
-              </div>
-            )
-          })
-        }
-      </div>
+const Projects = () => (
+  <div className="projects-wrapper" id="projects">
+    <h2 className="projects-title">Projects</h2>
+    <div className="projects">
+      { projects.map((project) => (
+          <div className="projects__card">
+            <Card
+              image={project.pic}
+              sign={project.sign}
+              link={project.link}
+            />
+          </div>
+        )) }
     </div>
-  )
-}
+  </div>
+)
 
 export default Projects;

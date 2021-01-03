@@ -3,10 +3,10 @@ import { useState, useEffect } from 'react'
 import "./Header.scss"
 import Marker from "../../elements/Marker";
 
-function Header() {
+const Header = () => {
   const [isTop, setIsTop] = useState(true)
 
-  function handleScroll() {
+  const handleScroll = () => {
     if (window.scrollY < 100) {
       setIsTop(true)
     } else {
@@ -14,7 +14,7 @@ function Header() {
     }
   }
 
-  useEffect(function() {
+  useEffect(() => {
     window.addEventListener('scroll', handleScroll)
   }, []);
 
