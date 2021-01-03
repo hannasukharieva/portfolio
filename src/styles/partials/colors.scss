@@ -1,17 +1,22 @@
+//Basic
 $text-basic: #000;
-$bright-yellow: #ffd166;
-$bright-yellow-25: rgba(255, 209, 102, .25);
-$bright-red: #ee6c4d;
-$bright-red-50: rgba(239, 110, 78, 0.5);
-$bright-blue: #007EA7;
-$bright-blue-25: rgba(21, 177, 230, 0.25);
-$dark-blue: #2B2D42;
 $light-basic: #F4EBBE;
-$bright-yellow-75: rgba(255, 209, 102, .5);
-$bright-violet: rgb(167, 153, 204);
-$bright-violet-50: rgba(167, 153, 204, .5);
-$black-40: rgba(0,0,0,0.4);
+$dark-blue: #2B2D42;
+$background: #ffeecd;
+
+//Bright
+$bright-yellow: #ffd166;
+$bright-violet: #a799cc;
+$bright-blue: #007EA7;
+$bright-red: #ee6c4d;
 $bright-ink: #495867;
 $bright-grey: #bbb1b1;
-$background: #ffeecd;
+
+// Transparent
+$bright-yellow-25: rgba(255, 209, 102, .25);
+$bright-blue-25: rgba(21, 177, 230, 0.25);
+$black-40: rgba(0,0,0,0.4);
+$bright-red-50: rgba(239, 110, 78, 0.5);
+$bright-violet-50: rgba(167, 153, 204, .5);
+$bright-yellow-75: rgba(255, 209, 102, .5);
 $background-80: rgba(255, 238, 205, .8);

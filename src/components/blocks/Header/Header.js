@@ -1,6 +1,9 @@
-import { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react';
 
-import "./Header.scss"
+// Styles
+import "./Header.scss";
+
+// Assets
 import Marker from "../../elements/Marker";
 
 const Header = () => {

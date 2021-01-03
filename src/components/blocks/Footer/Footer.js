@@ -1,8 +1,11 @@
+// Styles
 import "./Footer.scss";
-import facebook from "../../../assets/images/icons/facebook.png"
-import linkedin from "../../../assets/images/icons/linkedn.png"
-import instagram from "../../../assets/images/icons/instagram.png"
-import git from "../../../assets/images/icons/git.png"
+
+// Assets (icons)
+import facebook from "../../../assets/images/icons/facebook.png";
+import linkedin from "../../../assets/images/icons/linkedn.png";
+import instagram from "../../../assets/images/icons/instagram.png";
+import git from "../../../assets/images/icons/git.png";
 
 const Footer = () => (
   <footer className="footer-wrapper">
@@ -29,6 +32,5 @@ const Footer = () => (
     </div>
   </footer>
 )
-
 
 export default Footer;

@@ -24,6 +24,7 @@
   
   &:hover {
     transform: rotate(-9deg);
+
     img {
       filter: grayscale(0%);
     }
@@ -47,5 +48,4 @@
     transform: rotate(-10deg);
     text-align: center;
   }
-
 }

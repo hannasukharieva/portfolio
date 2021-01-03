@@ -6,12 +6,13 @@
   top: 0;
   z-index: 10;
   
-  @media screen and (max-width: $breakpoint-tablet){
+  @media screen and (max-width: $breakpoint-tablet) {
     display: none;
   }
 
   .header-list {
     @include content;
+    
     background-color: $bright-yellow-25;
     border-radius: 30px;
     height: 80px;

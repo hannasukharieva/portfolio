@@ -1,8 +1,13 @@
-import "./Projects.scss"
-import Card from "../../elements/Card"
-import figma from "../../../assets/images/projects/figma.PNG"
-import doggie from "../../../assets/images/projects/doggie.PNG"
-import budget from "../../../assets/images/projects/budget.PNG"
+// Styles
+import "./Projects.scss";
+
+// Components
+import Card from "../../elements/Card";
+
+// Assets
+import figma from "../../../assets/images/projects/figma.PNG";
+import doggie from "../../../assets/images/projects/doggie.PNG";
+import budget from "../../../assets/images/projects/budget.PNG";
 
 const projects = [
   {
@@ -34,7 +39,7 @@ const Projects = () => (
               link={project.link}
             />
           </div>
-        )) }
+      ))}
     </div>
   </div>
 )

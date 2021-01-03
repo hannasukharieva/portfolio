@@ -2,6 +2,7 @@
 
 .footer-wrapper {
   @include content;
+
   margin: auto;
   font-family: $header-font;
   font-size: $font-xs;
@@ -9,13 +10,13 @@
   justify-content: space-between;
   margin-top: -100px;
 
-  @media screen and (max-width: $breakpoint-tablet){
+  @media screen and (max-width: $breakpoint-tablet) {
     flex-direction: column;
     align-items: center;
     margin-top: -200px;
   }
 
-  .footer{
+  .footer {
     padding: 0 20px;
     padding-bottom: 20px;
     display: flex;
@@ -23,7 +24,7 @@
     &__list {
       list-style: none;
 
-      @media screen and (max-width: $breakpoint-tablet){
+      @media screen and (max-width: $breakpoint-tablet) {
         text-align: center;
         padding-bottom: 20px;
       }
@@ -41,7 +42,7 @@
       display: flex;
 
       a:first-child {
-        @media screen and (max-width: $breakpoint-mobile){
+        @media screen and (max-width: $breakpoint-mobile) {
           .icon-image {
             margin-left: 0;
           }
@@ -55,7 +56,7 @@
         background-color: $background;
         border-radius: 50%;
 
-        @media screen and (max-width: $breakpoint-mobile){
+        @media screen and (max-width: $breakpoint-mobile) {
           height: 40px;
           width: 40px;
         }

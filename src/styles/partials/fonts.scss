@@ -1,3 +1,16 @@
+// Fonts
+$header-font: 'Cutive_Mono';
+$handwriting: 'Indie_Flower';
+$marker: 'Permanent_Marker';
+
+// Font sizes
+$font-xs: 18px;
+$font-s: 22px;
+$font-m: 24px;
+$font-l: 28px;
+$font-xl: 48px;
+
+// Font import
 @font-face {
   font-family: 'Cutive_Mono';
   src: url('../../assets/fonts/Cutive_Mono/CutiveMono-Regular.ttf') format('truetype');
@@ -22,13 +35,3 @@
   font-family: 'Indie_Flower';
   src: url('../../assets/fonts/Indie_Flower/IndieFlower-Regular.ttf') format('truetype'); 
 }
-
-$header-font: 'Cutive_Mono';
-$handwriting: 'Indie_Flower';
-$marker: 'Permanent_Marker';
-
-$font-xs: 18px;
-$font-s: 22px;
-$font-m: 24px;
-$font-l: 28px;
-$font-xl: 48px;

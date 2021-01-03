@@ -1,5 +1,6 @@
 a {
   position: relative;
+
   .marker-indicator {
     position: absolute;
     mix-blend-mode: multiply;
@@ -9,12 +10,14 @@ a {
     opacity: 0;
     transition-delay: 0s;
     will-change: stroke-dashoffset;
-      svg {
-        width: 100%;
-      }
-      path {
-        transition: opacity .3s;
-      }
+
+    svg {
+      width: 100%;
+    }
+
+    path {
+      transition: opacity .3s;
+    }
   }
   
   &:hover {
@@ -25,5 +28,4 @@ a {
       transition-delay: .4s;
     }
   }
- }
- 
+}

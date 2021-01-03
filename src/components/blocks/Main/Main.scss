@@ -2,6 +2,7 @@
 
 .main-wrapper {
   @include content;
+
   display: grid;
   grid-gap: 80px;
   grid-template-columns: 1fr 1.5fr;
@@ -16,7 +17,7 @@
   border-left: 2px solid $bright-red;
   overflow-x: hidden;
 
-  @media screen and (max-width: $breakpoint-tablet){
+  @media screen and (max-width: $breakpoint-tablet) {
     padding-top: 50px;
     display: flex;
     flex-wrap: wrap;
@@ -43,7 +44,7 @@
       display: flex;
       align-items: flex-start;
 
-      @media screen and (max-width: $breakpoint-mobile-plus){
+      @media screen and (max-width: $breakpoint-mobile-plus) {
         flex-wrap: wrap;
       }
 
@@ -93,21 +94,23 @@
         li {
           border-bottom: 1px solid $bright-violet-50;
           list-style: none;
+            
+          &::before {
+            content: '';
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            background-image: url('../../../assets/images/dot.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            padding-right: 10px;
+          }
+          
+          &:hover {
             &::before {
-              content: '';
-              display: inline-block;
-              height: 10px;
-              width: 10px;
-              background-image: url('../../../assets/images/dot.png');
-              background-size: contain;
-              background-repeat: no-repeat;
-              padding-right: 10px;
+              background-image: url('../../../assets/images/dot-active.png');
             }
-            &:hover {
-              &::before {
-                background-image: url('../../../assets/images/dot-active.png');
-              }
-            }
+          }
         }
       }
     }
